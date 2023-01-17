@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <title>Employee Payroll App</title>
+</head>
+<body>
+
+    <header class="header-content header">
+        <div class="logo-content">
+            <a href="../Pages/EmpPayroll_form.html">
+                <img src="../assets/images/logo.png" alt="" /></a>
+            <div>
+                <span class="emp-text">EMPLOYEE</span><br />
+                <span class="emp-text emp-payroll">PAYROLL</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="header-content">
+            <div class="emp-detail-text">
+                Employee Details<div class="emp-count">10</div>
+            </div>
+            <a href="../pages/EmpPayroll_form.html" class="add-button">
+                <img src="../assests/icons/add-24px.svg" alt="" /> Add User</a>
+        </div>
+
+        <div class="table-main">
+            <table id="table-display" class="table">
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Start Date</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td><img class="profile" alt="" src="../assests/profile-images/Ellipse -9.png"></td>
+                    <td>Adesh</td>
+                    <td>Male</td>
+                    <td>
+                        <div class='Dept-label'>Engineer</div>
+                    </td>
+                    <td>40000</td>
+                    <td>15 Oct 2021</td>
+                    <td>
+                        <img id="1" onclick="remove(this)" src="../assets/icons/delete-black-18dp.svg" alt="delete">
+                        <img id="1" onclick="update(this)" src="../assets/icons/create-black-18dp.svg" alt="edit">
+                    </td>
+                </tr>
+            </table>
+            <script defer src="../js/home.js"></script>
+            <script defer src="../js/utility.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
